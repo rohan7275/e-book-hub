@@ -27,12 +27,14 @@ body {
 
 .logo-img {
     height: 100px;
+    padding: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
 .logo-img:hover {
-    height: 105px;
+    height: 110px;
+    padding: 0px;
 }
 
 .head-text {
@@ -54,6 +56,10 @@ body {
     transition: 0.5s;
 }
 
+.login-box:hover {
+    background-color: #181A1Edd;
+}
+
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
     cursor: pointer;
@@ -72,7 +78,7 @@ input {
     background-color: #0f0f11;
     margin: 10px 30px 10px 30px;
     padding: 0px 5px;
-    color: #4a4c65;
+    color: #3e4278;
     border: 1px solid #252633;
     border-radius: 5px;
     overflow: visible;
@@ -133,6 +139,12 @@ button:hover {
     border-radius: 10px;
     margin: 50px auto;
     padding: 5px 40px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.register-box:hover {
+    background-color: #181A1Edd;
 }
 
 .register-text {

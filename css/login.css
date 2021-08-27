@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-    background-image: -webkit-radial-gradient(#181A1Edd, #181A1E00 60%);
+    background-image: -webkit-radial-gradient(#181A1Edd 5%, #181A1E00 90%);
     height: fit-content;
     width: 340px;
     align-items: center;
@@ -27,12 +27,14 @@ body {
 
 .logo-img {
     height: 100px;
+    padding: 5px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
 .logo-img:hover {
-    height: 105px;
+    height: 110px;
+    padding: 0px;
 }
 
 .head-text {
@@ -51,6 +53,10 @@ body {
     border-radius: 10px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+}
+
+.login-box:hover {
+    background-color: #181A1Edd;
 }
 
 label {
@@ -129,6 +135,12 @@ button:hover {
     border-radius: 10px;
     margin: 50px auto;
     padding: 5px 40px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.register-box:hover {
+    background-color: #181A1Edd;
 }
 
 .register-text {
