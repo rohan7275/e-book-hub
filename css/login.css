@@ -97,7 +97,7 @@ button {
     align-self: flex-end;
     width: 100%;
     font-family: sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-size: 13px;
     vertical-align: middle;
     border: 1px solid #252633;
@@ -109,7 +109,7 @@ button {
 button:hover {
     color: #0f0f11;
     font-family: sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-weight: bolder;
     font-size: 13px;
     background-color: #94A7FF;
