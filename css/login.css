@@ -1,0 +1,144 @@
+body {
+    background-color: #0f0f11;
+    color: #FFF;
+    padding: 10px;
+}
+
+.header {
+    height: fit-content;
+    width: auto;
+    align-items: center;
+    padding: 10px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
+}
+
+.logo-div {
+    height: fit-content;
+    margin: 20px auto 50px auto;
+    align-items: center;
+    text-align: center!important;
+}
+
+.logo-img {
+    height: 90px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.logo-img:hover {
+    height: 100px;
+}
+
+.head-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 10;
+    font-size: 30px;
+}
+
+.login-box {
+    background-color: #181A1E;
+    height: fit-content;
+    width: 400px;
+    padding: 50px 40px;
+    margin: -17px auto;
+    border: 1px solid #94A7FF;
+    border-radius: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+label {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    background-color: #0f0f11;
+    margin: 10px 0px 10px 0px;
+    padding: 0px 5px;
+    color: white;
+    border: 1px solid #252633;
+    border-radius: 5px;
+    overflow: visible;
+    -webkit-transition: 0.85s;
+    transition: 0.85s;
+}
+
+input:focus {
+    border: 3px solid #94A7FF;
+}
+
+input[type=text] {
+    font-size: 15px;
+}
+
+input[type=password] {
+    font-size: 25px;
+}
+
+.button-div {
+    align-self: flex-end;
+    align-items: flex-end;
+    margin: 0px 0px 0px auto;
+}
+
+button {
+    float: right;
+    margin: 0px 0px 10px 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #219519;
+    color: #FFF;
+    height: 35px;
+    align-self: flex-end;
+    width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    font-size: 13px;
+    vertical-align: middle;
+    border: 1px solid #252633;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+button:hover {
+    color: #0f0f11;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    font-size: 13px;
+    background-color: #94A7FF;
+}
+
+.register-box {
+    text-align: center;
+    width: 400px;
+    border: 1px solid #444665;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 5px 40px;
+}
+
+.register-text {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+a {
+    color: #94A7FF;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}

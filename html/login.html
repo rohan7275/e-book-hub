@@ -2,12 +2,41 @@
 <html>
 
 <head>
-    <title>Login</title>
-    <link href="./../css/style.css" rel="style">
+    <title>Login to eBookHub | eBookHub</title>
+    <link rel="icon" href="./../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/login.css">
+    <script src="./../js/login.js"></script>
 </head>
 
 <body>
-
+    <div class="header">
+        <div class="logo-div">
+            <a href="./../index.html"><img class="logo-img" src="./../img/logo.png" type="image/png" height="30px" align="center" alt="logo"></a>
+        </div>
+        <h2 class="head-text" align="center">Login &nbsp;to &nbsp;<strong>eBookHub</strong></h2>
+    </div>
+    <div class="login-box">
+        <form>
+            <label for="username">Username<label>
+            <br>
+            <input type="text" id="username">
+            <br>
+            </br>
+            <label for="password">Password<label>
+            <br>
+            <input type="password" id="password">
+            <br>
+            </br>
+            </br>
+            <button onclick="getInfo()">Login</button>
+            </br>
+            <output id="status"></output>
+        </form>
+    </div>
+    <div class="register-box">
+        <p class="register-text"> New to eBookHub?  &nbsp; <a href="./register.html">Create an account.</a></p>
+    </div>
 </body>
 
 </html>
