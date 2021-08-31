@@ -1,12 +1,29 @@
 body {
-    background-image: url("./../img/background6.jpg");
-    background-position: center;
     height: 900px;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0f0f11;
     color: #FFF;
     padding: 10px;
+}
+
+.bg-img {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url("./../img/background6.jpg");
+    background-position: center;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 100%;
+}
+
+.rest-content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
 }
 
 .header {
