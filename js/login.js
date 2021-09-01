@@ -1,13 +1,11 @@
-var users = [
-    {
-        username: "codechaser",
-        password: "abc-123"
-    },
-    {
-        username: "astrra",
-        password: "sjr-2351"
+const fs = require("fs");
+
+fs.readFile("./../data/users.csv", "r", (err, data)) {
+    if (err) {
+        throw err;
     }
-]
+    var users = data;
+}
 
 function checkInfo(username, password) {
     for (i in users) { if (users[i].username == username && users[i].password == password) { return true } }

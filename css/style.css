@@ -1,12 +1,111 @@
 /*
-
 LOGO COLORS:
 94A7FF
 444665
 181A1E
 BFCAFF 70% 
-
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap');
+body {
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0f0f11;
+    color: #FFF;
+    padding: 0px;
+}
+
+.bg-img {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url("./../img/background6.jpg");
+    background-position: center;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 100%;
+}
+
+.rest-content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.logo-img {
+    height: 70px;
+    padding: 15px 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.logo-img:hover {
+    height: 80px;
+    padding: 10px 0px;
+}
+
+.header-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: 0px;
+    padding: 20px;
+    border-bottom: 1px solid #94A7FF00;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+div.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    border-bottom: 1px solid #94A7FF;
+    border-top: 1px solid #94A7FF;
+    background-color: #181A1Eaa;
+    border-radius: -10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+div.tabs:hover {
+    background-color: #181A1Eee;
+}
+
+button.tabs {
+    float: left;
+    cursor: pointer;
+    color: #94A7FF;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #181A1E, #94A7FF, #181A1E);
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-image-slice: 1;
+    margin: 10px 20px;
+    padding: 0px;
+    height: 30px;
+    width: 140px;
+    font-family: sans-serif;
+    font-size: 13px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+button.tabs:hover {
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin: 0px 5px;
+    height: 50px;
+    width: 170px;
+    color: #181A1E;
+    background-color: #94A7FF;
+}
