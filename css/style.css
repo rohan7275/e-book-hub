@@ -82,16 +82,7 @@ div.tabs:hover {
     background-color: #181A1Eee;
 }
 
-div.par {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-}
-
 .seperator {
-    position: static;
     margin: 0px;
     letter-spacing: 0px;
     padding: 0px;
@@ -103,7 +94,6 @@ div.par {
 }
 
 button.tabs {
-    position: sticky;
     float: left;
     cursor: pointer;
     color: #94A7FF;
