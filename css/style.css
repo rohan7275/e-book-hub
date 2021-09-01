@@ -67,8 +67,12 @@ div.tabs {
     justify-content: center;
     align-items: center;
     height: fit-content;
-    border-bottom: 1px solid #94A7FF;
-    border-top: 1px solid #94A7FF;
+    border: 1px solid #94A7FF;
+    border-width: 1px 0px;
+    /* border-image: linear-gradient(to right, #181A1E, #94A7FF, #181A1E);
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-image-slice: 1; */
     background-color: #181A1Eaa;
     border-radius: -10px;
     -webkit-transition: 0.5s;
@@ -79,20 +83,27 @@ div.tabs:hover {
     background-color: #181A1Eee;
 }
 
+.seperator {
+    margin: 0px;
+    letter-spacing: 0px;
+    padding: 0px;
+    font-size: 40px;
+    background: linear-gradient(to bottom, #181A1E00, #94A7FF, #181A1E00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 button.tabs {
     float: left;
     cursor: pointer;
     color: #94A7FF;
     background-color: transparent;
-    border: 1px solid transparent;
-    border-image: linear-gradient(to right, #181A1E, #94A7FF, #181A1E);
-    border-left: 0px solid transparent;
-    border-right: 0px solid transparent;
-    border-image-slice: 1;
-    margin: 10px 15px;
+    border: 0px solid transparent;
+    margin: 10px 10px;
     padding: 0px;
     height: 30px;
-    width: 145px;
+    width: 130px;
     font-family: sans-serif;
     font-size: 13px;
     -webkit-transition: 0.5s;
@@ -100,12 +111,12 @@ button.tabs {
 }
 
 button.tabs:hover {
+    width: 150px;
     font-size: 14px;
     font-weight: bolder;
     letter-spacing: 1px;
-    margin: 0px;
+    margin: 0px 0px;
     height: 50px;
-    width: 175px;
     color: #181A1E;
     background-color: #94A7FF;
 }
