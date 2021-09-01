@@ -9,6 +9,23 @@ body {
     padding: 10px;
 }
 
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #3e4278;
+    opacity: 1;
+    /* Firefox adds a lower opacity to the placeholder, so we use opacity: 1; to fix it; */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #3e4278;
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #3e4278;
+}
+
 .bg-img {
     position: fixed;
     left: 0;
