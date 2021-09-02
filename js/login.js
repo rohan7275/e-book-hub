@@ -6,7 +6,7 @@ document.getElementById("loginForm").addEventListener("submit",(event)=>{
 firebase.auth().onAuthStateChanged((user)=>{
   if(user){
     alert("user loged in");
-      location.replace("https://getbootstrap.com/docs/5.0/getting-started/introduction/")
+      location.replace("https://www.paypal.com/in/signin");
   }
 })
 
