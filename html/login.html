@@ -6,6 +6,7 @@
     <link rel="icon" href="./../img/favicon.png" type="image/png">
     <link rel="stylesheet" href="./../css/login.css">
     <script src="./../js/login.js"></script>
+    <script src="./../js/welcome.js"></script>
 </head>
 
 <body>
@@ -16,10 +17,10 @@
         <h2 class="head-text" align="center">Login &nbsp;to &nbsp;<strong>eBookHub</strong></h2>
     </div>
     <div class="login-box">
-        <form>
+        <form id="loginForm" onsubmit="login()">
             <label for="username">Username<label>
             </br>
-            <input type="text" id="username">
+            <input type="text" id="email">
             </br>
             </br>
             <label for="password">Password<label>
@@ -28,7 +29,7 @@
             </br>
             </br>
             </br>
-            <button onclick="getInfo()">Login</button>
+            <button onclick="login()">Login</button>
             </br>
             <output id="status"></output>
         </form>
@@ -36,6 +37,19 @@
     <div class="register-box">
         <p class="register-text"> Not a member yet?  &nbsp; <a href="./register.html">Register here.</a></p>
     </div>
+<div class="forgot_pass">
+        <button  onclick="forgotPass()">forgot password</button>
+    </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+        <script src="./../js/firebase.js"></script>
+        <script src="./../js/login.js"></script>
 </body>
 
 </html>
