@@ -6,6 +6,8 @@
     <link rel="icon" href="./../img/favicon.png" type="image/png">
     <link rel="stylesheet" href="./../css/register.css">
     <script src="./../js/register.js"></script>
+    <script src="./../js/index.js"></script>
+    
 </head>
 
 <body>
@@ -61,7 +63,7 @@
             </div>
             <div class="box-inner-div">
                 <span class="inner-span is3">
-                <input type="password" id="password1" value="">
+                <input type="password" id="password" value="">
             </span>
                 <span class="inner-span is4">
                 <input type="password" id="password2" value="">
@@ -69,7 +71,7 @@
             </div>
             <br>
             <br>
-            <button onclick="getInfo()">Register</button>
+            <button onclick="signUp()">Register</button>
             <output id="status"></output>
         </form>
     </div>
@@ -77,6 +79,16 @@
     <div class="login-box">
         <p class="login-text"> Already a member? &nbsp; <a href="./login.html">Login here.</a></p>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+     <script src="./../js/firebase.js"></script>
+     <script src="./../js/login.js"></script>
 </body>
 
 </html>
