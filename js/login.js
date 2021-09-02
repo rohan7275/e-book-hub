@@ -1,20 +1,41 @@
-const fs = require("fs");
+document.getElementById("loginForm").addEventListener("submit",(event)=>{
+  event.preventDefault()
+})
 
-fs.readFile("./../data/users.csv", "r", (err, data)) {
-    if (err) {
-        throw err;
-    }
-    var users = data;
+
+firebase.auth().onAuthStateChanged((user)=>{
+  if(user){
+    alert("user loged in");
+      location.replace("welcome.html")
+  }
+})
+
+function login(){
+  const email = document.getElementById("email").value
+  const password = document.getElementById("password").value
+  firebase.auth().signInWithEmailAndPassword(email, password)
+  .catch((error)=>{
+      document.getElementById("error").innerHTML = error.message
+  })
 }
 
-function checkInfo(username, password) {
-    for (i in users) { if (users[i].username == username && users[i].password == password) { return true } }
-    return false
+function signUp(){
+  const email = document.getElementById("email").value
+  const password = document.getElementById("password").value
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+  .catch((error) => {
+      document.getElementById("error").innerHTML = error.message
+  });
+  alert("new account created,now you can login");
 }
 
-function getInfo() {
-    var username = document.getElementById("username").value
-    var password = document.getElementById("password").value
-    if (checkInfo(username, password)) console.log("Welcome back, " + username + " !\n")
-    else console.log("Incorrect username or password!\n")
+function forgotPass(){
+  const email = document.getElementById("email").value
+  firebase.auth().sendPasswordResetEmail(email)
+  .then(() => {
+      alert("Reset link sent to your email id")
+  })
+  .catch((error) => {
+      document.getElementById("error").innerHTML = error.message
+  });
 }
