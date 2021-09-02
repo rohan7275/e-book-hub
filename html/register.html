@@ -9,76 +9,73 @@
 </head>
 
 <body>
-    <div class="bg-img"></div>
-    <div class="rest-content">
-        <div class="header">
-            <div class="logo-div">
-                <a href="./../index.html"><img class="logo-img" src="./../img/logo.png" type="image/png" align="center" alt="logo"></a>
+    <div class="header">
+        <div class="logo-div">
+            <a href="./../index.html"><img class="logo-img" src="./../img/logo.png" type="image/png" align="center" alt="logo"></a>
+        </div>
+        <h2 class="head-text" align="center">Register &nbsp;at &nbsp;<strong>eBookHub</strong></h2>
+    </div>
+    <div class="reg-box">
+        <form>
+            <div class="box-inner-div">
+                <span class="inner-span is1">
+                <label for="name">Full Name</label>
+            </span>
+                <span class="inner-span is2">
+                <label for="username">Email Address</label>
+            </span>
             </div>
-            <h2 class="head-text" align="center">Register &nbsp;at &nbsp;<strong>eBookHub</strong></h2>
-        </div>
-        <div class="reg-box">
-            <form>
-                <div class="box-inner-div">
-                    <span class="inner-span is1">
-                    <label for="name">Full Name</label>
-                </span>
-                    <span class="inner-span is2">
-                    <label for="username">Email Address</label>
-                </span>
-                </div>
-                <div class="box-inner-div">
-                    <span class="inner-span is3">
-                    <input type="text" id="name" placeholder="John Doe">
-                </span>
-                    <span class="inner-span is4">
-                    <input type="email" id="email" placeholder="johndoe@example.com">
-                </span>
-                </div>
-                <br>
-                <div class="box-inner-div">
-                    <span class="inner-span is1">
-                    <label for="dob">Date of Birth</label>
-                </span>
-                    <span class="inner-span is2">
-                    <label for="username">Pick Username</label>
-                </span>
-                </div>
-                <div class="box-inner-div">
-                    <span class="inner-span is3">
-                    <input type="date" id="dob" value="2001-01-01">
-                </span>
-                    <span class="inner-span is4">
-                    <input type="text" id="username" placeholder="johndoe">
-                </span>
-                </div>
-                <br>
-                <div class="box-inner-div">
-                    <span class="inner-span is1">
-                    <label for="password1">Password</label>
-                </span>
-                    <span class="inner-span is2">
-                    <label for="password2">Confirm Password</label>
-                </span>
-                </div>
-                <div class="box-inner-div">
-                    <span class="inner-span is3">
-                    <input type="password" id="password1" value="">
-                </span>
-                    <span class="inner-span is4">
-                    <input type="password" id="password2" value="">
-                </span>
-                </div>
-                <br>
-                <br>
-                <button onclick="getInfo()">Register</button>
-                <output id="status"></output>
-            </form>
-        </div>
-        <br>
-        <div class="login-box">
-            <p class="login-text"> Already a member? &nbsp; <a href="./login.html">Login here.</a></p>
-        </div>
+            <div class="box-inner-div">
+                <span class="inner-span is3">
+                <input type="text" id="name" placeholder="John Doe">
+            </span>
+                <span class="inner-span is4">
+                <input type="email" id="email" placeholder="johndoe@example.com">
+            </span>
+            </div>
+            <br>
+            <div class="box-inner-div">
+                <span class="inner-span is1">
+                <label for="dob">Date of Birth</label>
+            </span>
+                <span class="inner-span is2">
+                <label for="username">Pick Username</label>
+            </span>
+            </div>
+            <div class="box-inner-div">
+                <span class="inner-span is3">
+                <input type="date" id="dob" value="2001-01-01">
+            </span>
+                <span class="inner-span is4">
+                <input type="text" id="username" placeholder="johndoe">
+            </span>
+            </div>
+            <br>
+            <div class="box-inner-div">
+                <span class="inner-span is1">
+                <label for="password1">Password</label>
+            </span>
+                <span class="inner-span is2">
+                <label for="password2">Confirm Password</label>
+            </span>
+            </div>
+            <div class="box-inner-div">
+                <span class="inner-span is3">
+                <input type="password" id="password1" value="">
+            </span>
+                <span class="inner-span is4">
+                <input type="password" id="password2" value="">
+            </span>
+            </div>
+            <br>
+            <br>
+            <button onclick="getInfo()">Register</button>
+            <output id="status"></output>
+        </form>
+    </div>
+    <br>
+    <div class="login-box">
+        <p class="login-text"> Already a member? &nbsp; <a href="./login.html">Login here.</a></p>
     </div>
 </body>
 

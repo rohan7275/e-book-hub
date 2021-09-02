@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap');
 body {
-    height: 900px;
-    background-repeat: no-repeat;
+    min-height: 100%;
+    background: url("./../img/background6.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-color: #0f0f11;
     color: #FFF;
@@ -24,25 +27,6 @@ body {
  ::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #3e4278;
-}
-
-.bg-img {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-image: url("./../img/background6.jpg");
-    background-position: center;
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-    height: 100%;
-}
-
-.rest-content {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 99;
 }
 
 .header {
